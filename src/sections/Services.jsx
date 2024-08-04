@@ -18,7 +18,6 @@ const Services = () => {
       <div className="grid grid-cols-3 gap-4 mt-5 max-sm:grid-cols-2">
         {menuList.map((menu) =>(
           loading ? <Skeleton Pstyles={menu.parentStyles} key={menu.img}/> : <Card imgSrc={menu.img} text={menu.text} Pstyles={menu.parentStyles} Cstyles={menu.childStyles} key={menu.img}/>
-          // <Card imgSrc={menu.img} text={menu.text} Pstyles={menu.parentStyles} Cstyles={menu.childStyles} key={menu.img}/>
         ))}
       </div>
     </section>

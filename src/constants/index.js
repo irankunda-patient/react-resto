@@ -3,7 +3,7 @@ import food from '../assets/roastingmeat.jpg'
 import heroPot from '../assets/heropotatoes.jpg'
 import meatSalads from '../assets/meat&salads.jpg'
 import potato from '../assets/images.jpeg'
-
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 
 
 export const menuList = [
@@ -37,5 +37,20 @@ export const menuList = [
         text: "Food",
         parentStyles: "bg-white flex justify-center flex-1 flex-col items-center py-3 rounded-md",
         childStyles: "w-[200px] h-[200px] rounded-full overflow-hidden shadow flex justify-center items-start",
+    }
+]
+
+export const socialLinks = [
+    {
+        linkIcon: FaFacebook,
+        href: "https://facebook.com",
+    },
+    {
+        linkIcon: FaInstagram,
+        href: "https://instagram.com",
+    },
+    {
+        linkIcon: FaTwitter,
+        href: "https://x.com",
     }
 ]

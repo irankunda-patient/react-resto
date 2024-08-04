@@ -1,13 +1,15 @@
 
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import Logo from '../assets/restoLogo.png'
 
 const Nav = () => {
   const [toggle, setToggle] = useState(false)
   return (
-    <header>
-      <nav className='w-[94vw] fixed flex justify-center items-center bg-black-gradient p-4 font-montserrat text-white max-sm:hidden sm:w-full'>
-        <ul className='flex flex-row gap-6'>
+    <header className='fixed flex justify-center items-center bg-black-gradient  max-sm:w-full p-8 font-montserrat text-white sm:w-full'>
+      <nav className='w-full fixed flex justify-around items-center font-montserrat text-white sm:w-full max-sm:justify-start'>
+      <a href="/"><img src={Logo} alt="logo" width={150} height={150} className='max-sm:block'/></a>
+        <ul className='flex flex-row gap-6 max-sm:hidden'>
           <li><a href="/">home</a></li>
           <li><a href="#menu">menu</a></li>
           <li><a href="#about">about</a></li>

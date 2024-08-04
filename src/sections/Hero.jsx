@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="mx-1 flex flex-col">
         <h1 className='text-white-400 font-montserrat text-[45px]'>Welcome to <span className='text-[#ffc402]'>Stick & Fry Corner</span></h1>
         <p className='text-[#ffffffcd] font-montserrat text-[15px]'>Savor the Best Stick Meat and Fried Potatoes in Nairobi</p>
-        <Button text='Try Now' styles='text-white flex border rounded-full justify-around items-center p-3 self-start mt-5 w-[120px] hover:transition-all duration-300 hover:border-[2px]' icon={<FaArrowRight size={20} fill='white' className=''/>}/>
+        <a href="#contact"><Button text='Try Now' styles='text-white flex border rounded-full justify-around items-center p-3 self-start mt-5 w-[120px] hover:transition-all duration-300 hover:border-[2px]' icon={<FaArrowRight size={20} fill='white' className=''/>}/></a>
       </div>
     </section>
   )
